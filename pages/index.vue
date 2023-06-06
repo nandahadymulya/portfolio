@@ -1,7 +1,6 @@
 <script setup>
-const pageName = "Dashboard";
 useSeoMeta({
-  title: `${pageName} - Portfolio Nanda Hady Mulya`,
+  title: `Portfolio Nanda Hady Mulya`,
 });
 </script>
 <template>
