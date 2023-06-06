@@ -1,5 +1,14 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <LazyNuxtLayout>
+    <NuxtLoadingIndicator />
+    <NuxtPage />
+  </LazyNuxtLayout>
 </template>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+</style>
