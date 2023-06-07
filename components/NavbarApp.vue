@@ -32,13 +32,17 @@ const menus = [
 .menu--item {
   color: var(--color-light);
   background-color: none;
-  padding: 0.75rem;
-  border-radius: 1.25rem;
+  padding: 0.5rem;
 }
 
 .menu--item--active {
-  background-color: var(--color-light);
-  color: var(--color-primary);
+  text-decoration: underline;
+  color: var(--color-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu--item:hover {
+  filter: drop-shadow(0 0 0.75rem var(--color-light));
   transition: all 0.3s ease-in-out;
 }
 </style>

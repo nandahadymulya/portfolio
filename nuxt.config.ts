@@ -24,5 +24,6 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/styles/main.css"],
+  modules: ["nuxt-icon"],
   devtools: { enabled: true },
 });

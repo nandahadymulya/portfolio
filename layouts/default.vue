@@ -2,7 +2,6 @@
   <div>
     <div class="nav--container">
       <navbar-app />
-      <icon-app />
     </div>
     <div class="content--container">
       <slot />
@@ -17,38 +16,37 @@
 .nav--container,
 .content--container,
 .footer--container {
-  padding: 1rem;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .nav--container,
 .footer--container {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .nav--container {
   background-color: var(--color-primary);
+  position: fixed;
   top: 0;
   width: 100%;
-  position: fixed;
 }
 
 .content--container {
-  color: var(--color-primary);
+  align-items: center;
+  background-color: var(--color-light);
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: calc(100vh);
-  background-color: var(--color-light);
 }
 
 .footer--container {
   color: var(--color-light);
   background-color: var(--color-dark);
   bottom: 0;
-  width: 100%;
-  position: fixed;
   justify-content: center;
+  position: fixed;
+  width: 100%;
 }
 </style>
