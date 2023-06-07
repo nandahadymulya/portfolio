@@ -4,26 +4,34 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div>
-    <div class="greeting--container">
-      <h2>
+  <div class="flex flex-col mt-40">
+    <div class="">
+      <h2 class="font-extrabold text-5xl text-zinc-700 leading-relaxed">
         Hi 👋, <br />
-        <span> I'm Nanda Hady Mulya</span>.
+        <span class=""> I'm Nanda Hady Mulya</span>.
       </h2>
-      <div>
+      <div class="my-3 text-zinc-700 leading-relaxed">
         A <b>Software Engineer</b> passionate about solving problems with tech.
         <br />
         I'm skilled in <b>Backend Development</b>, <b>Frontend Development</b>,
         and currently learning <b>Mobile Development</b>.
       </div>
     </div>
-    <div class="cta--container">
-      <NuxtLink to="/project" class="btn--primary">Explore</NuxtLink>
-      <NuxtLink to="/contact" class="btn--secondary">Get in touch</NuxtLink>
+    <div class="flex gap-3 my-3">
+      <NuxtLink
+        to="/project"
+        class="bg-teal-500 hover:bg-teal-700 text-zinc-100 font-normal text-center rounded-lg p-2 w-32 transition-colors duration-300 ease-in-out"
+        >Explore</NuxtLink
+      >
+      <NuxtLink
+        to="/contact"
+        class="bg-white text-teal-500 hover:text-teal-700 font-normal text-center border-solid border border-teal-500 hover:border-teal-700 rounded-lg p-2 w-32 transition-colors duration-300 ease-in-out"
+        >Get in touch</NuxtLink
+      >
     </div>
-    <hr />
-    <div class="social--icon--container">
-      <icon-app class="social--icon" />
+    <hr class="my-3" />
+    <div class="my-3">
+      <icon-app />
     </div>
   </div>
 </template>
@@ -32,13 +40,6 @@ useSeoMeta({
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-h2 {
-  color: var(--color-dark);
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
 }
 
 .cta--container,

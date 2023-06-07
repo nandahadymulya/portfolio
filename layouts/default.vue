@@ -1,52 +1,14 @@
 <template>
-  <div>
-    <div class="nav--container">
+  <div class="w-screen h-screen p-2">
+    <div class="sticky top-0 bg-white">
       <navbar-app />
     </div>
-    <div class="content--container">
+    <div class="flex justify-center items-center rounded-lg">
       <slot />
     </div>
 
-    <div class="footer--container">
+    <div class="fixed bottom-0">
       <footer-app />
     </div>
   </div>
 </template>
-<style scoped>
-.nav--container,
-.content--container,
-.footer--container {
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-.nav--container,
-.footer--container {
-  align-items: center;
-  display: flex;
-}
-
-.nav--container {
-  background-color: var(--color-primary);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.content--container {
-  align-items: center;
-  background-color: var(--color-light);
-  display: flex;
-  justify-content: center;
-  min-height: calc(100vh);
-}
-
-.footer--container {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-  bottom: 0;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-}
-</style>

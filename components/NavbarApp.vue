@@ -11,38 +11,22 @@ const menus = [
 ];
 </script>
 <template>
-  <nav class="menu--container">
+  <nav
+    class="my-auto h-20 flex flex-wrap justify-center content-center w-screen gap-3"
+  >
     <div v-for="menu in menus" :key="menu.title">
-      <NuxtLink
-        :to="menu.to"
-        :class="route.path === menu.to ? 'menu--item--active' : ''"
-        class="menu--item"
-      >
-        {{ menu.title }}
+      <NuxtLink :to="menu.to">
+        <div
+          :class="
+            route.path === menu.to
+              ? 'bg-teal-100 text-zinc-700 font-semibold '
+              : 'bg-zinc-50 hover:bg-teal-50 text-zinc-500  hover:text-zinc-600 font-normal'
+          "
+          class="p-3 w-28 text-center text-sm rounded-lg transition-colors duration-300 ease-in-out cursor-pointer"
+        >
+          {{ menu.title }}
+        </div>
       </NuxtLink>
     </div>
   </nav>
 </template>
-<style scoped>
-.menu--container {
-  display: flex;
-  gap: 1rem;
-}
-
-.menu--item {
-  color: var(--color-light);
-  background-color: none;
-  padding: 0.5rem;
-}
-
-.menu--item--active {
-  text-decoration: underline;
-  color: var(--color-dark);
-  transition: all 0.3s ease-in-out;
-}
-
-.menu--item:hover {
-  filter: drop-shadow(0 0 0.75rem var(--color-light));
-  transition: all 0.3s ease-in-out;
-}
-</style>

@@ -23,7 +23,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["~/assets/styles/main.css"],
-  modules: ["nuxt-icon"],
+  modules: ["nuxt-icon", "@nuxtjs/tailwindcss"],
   devtools: { enabled: true },
 });

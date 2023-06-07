@@ -5,7 +5,7 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div>
-    <h1>Project</h1>
+  <div class="">
+    {{ pageName }}
   </div>
 </template>

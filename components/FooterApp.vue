@@ -1,11 +1,3 @@
 <template>
-  <footer>&copy; 2022 - Nanda Hady Mulya.</footer>
+  <footer class="p-2 text-zinc-400">&copy; 2022 - Nanda Hady Mulya.</footer>
 </template>
-<style>
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
-</style>
