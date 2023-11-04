@@ -7,6 +7,6 @@
       <slot />
     </div>
 
-    <footer-app class="flex-none footer" />
+    <footer-app class="footer" />
   </div>
 </template>

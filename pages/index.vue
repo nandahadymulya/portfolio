@@ -7,21 +7,22 @@ const skills = [
   { code: 'HTML' }, { code: 'CSS' }, { code: 'SCSS/SASS' },
   { code: 'Tailwind' }, { code: 'JavaScript' }, { code: 'TypeScript' },
   { code: 'PHP' }, { code: 'Python' }, { code: 'Dart' }, { code: 'Go' },
+  { code: 'MySQL' }, { code: 'PostgreSQL' }, { code: 'SQLite' }, { code: 'MongoDB' },
+  { code: 'Docker' },
 ]
 </script>
 <template>
-  <div class="flex flex-col gap-6 p-12 sm:p-16n">
-    <main class="bg-zinc-50 p-12 sm:p-16 md:p-20 rounded-2xl mb-12">
+  <div class="flex flex-col p-6 md:p-16">
+    <main class="bg-zinc-50 p-10 rounded-2xl mb-6">
       <div class="mb-12">
         <h2 class="font-extrabold text-3xl sm:text-4xl md:text-5xl text-zinc-700 leading-relaxed">
           Hi 👋, <br />
           <span class=""> I'm Nanda Hady Mulya</span>.
         </h2>
         <div class="my-3 text-zinc-700 leading-relaxed">
-          A <b>Software Engineer</b> has a sense of design and experienced full-stack development
-          <br>
-          specializing in <b>Python</b>, <b>TypeScript</b>, and <b>Flutter</b>.
-          I am interested in <b>Artificial Intelligence</b> and <b>Machine Learning (ML)</b>.
+          A <b>Software Engineer</b> has a sense of design and experienced full-stack development specializing in
+          <b>Python</b>, <b>TypeScript</b>, and <b>Flutter</b>.
+          I am interested in <b>Natural Language Processing</b> and <b>Machine Learning (ML)</b>.
         </div>
       </div>
       <div class="flex gap-3 my-3">
@@ -40,7 +41,7 @@ const skills = [
 
 
     <section class="justify-center items-center">
-      <h3 class="text-2xl font-semibold text-teal-500">Skills</h3>
+      <h3 class="text-2xl font-semibold text-teal-500 mb-6">Skills</h3>
       <div class="flex justify-center flex-wrap gap-3">
         <div v-for="item in skills" :key="item.code">
           <div
