@@ -1,14 +1,12 @@
 <template>
-  <div class="w-screen h-screen p-2">
-    <div class="sticky top-0 bg-white">
-      <navbar-app />
-    </div>
-    <div class="flex justify-center items-center rounded-lg">
+  <div class="flex flex-col h-screen">
+
+    <navbar-app class="flex-none header sticky bg-white" />
+
+    <div class="flex-grow overflow-y-auto">
       <slot />
     </div>
 
-    <div class="fixed bottom-0">
-      <footer-app />
-    </div>
+    <footer-app class="flex-none footer" />
   </div>
 </template>

@@ -3,6 +3,16 @@
   --color-secondary: #393e46;
   --color-dark: #222831;
   --color-light: #eeeeee;
+  --header-height: 64px;
+  --footer-height: 64px;
+}
+
+.header {
+  height: var(--header-height);
+}
+
+.footer {
+  height: var(--footer-height);
 }
 
 * {

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Portfolio as a software engineer. I am a software engineer who loves to create new things. I am currently working at non-structural government Peatland and Mangrove Restoration Agency (BRGM) of Republic of Indonesia.",
+            "Portfolio as a software engineer. I am a software engineer who loves to create new things. I am currently working at PT. Lintas Media Danawa, as a fullstack developer on division product.",
         },
       ],
       link: [

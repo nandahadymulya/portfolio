@@ -2,37 +2,55 @@
 useSeoMeta({
   title: `Portfolio - Nanda Hady Mulya`,
 });
+
+const skills = [
+  { code: 'HTML' }, { code: 'CSS' }, { code: 'SCSS/SASS' },
+  { code: 'Tailwind' }, { code: 'JavaScript' }, { code: 'TypeScript' },
+  { code: 'PHP' }, { code: 'Python' }, { code: 'Dart' }, { code: 'Go' },
+]
 </script>
 <template>
-  <div class="flex flex-col mt-40">
-    <div class="">
-      <h2 class="font-extrabold text-5xl text-zinc-700 leading-relaxed">
-        Hi 👋, <br />
-        <span class=""> I'm Nanda Hady Mulya</span>.
-      </h2>
-      <div class="my-3 text-zinc-700 leading-relaxed">
-        A <b>Software Engineer</b> passionate about solving problems with tech.
-        <br />
-        I'm skilled in <b>Backend Development</b>, <b>Frontend Development</b>,
-        and currently learning <b>Mobile Development</b>.
+  <div class="flex flex-col gap-6 p-12 sm:p-16n">
+    <main class="bg-zinc-50 p-12 sm:p-16 md:p-20 rounded-2xl mb-12">
+      <div class="mb-12">
+        <h2 class="font-extrabold text-3xl sm:text-4xl md:text-5xl text-zinc-700 leading-relaxed">
+          Hi 👋, <br />
+          <span class=""> I'm Nanda Hady Mulya</span>.
+        </h2>
+        <div class="my-3 text-zinc-700 leading-relaxed">
+          A <b>Software Engineer</b> has a sense of design and experienced full-stack development
+          <br>
+          specializing in <b>Python</b>, <b>TypeScript</b>, and <b>Flutter</b>.
+          I am interested in <b>Artificial Intelligence</b> and <b>Machine Learning (ML)</b>.
+        </div>
       </div>
-    </div>
-    <div class="flex gap-3 my-3">
-      <NuxtLink
-        to="/project"
-        class="bg-teal-500 hover:bg-teal-700 text-zinc-100 font-normal text-center rounded-lg p-2 w-32 transition-colors duration-300 ease-in-out"
-        >Explore</NuxtLink
-      >
-      <NuxtLink
-        to="/contact"
-        class="bg-white text-teal-500 hover:text-teal-700 font-normal text-center border-solid border border-teal-500 hover:border-teal-700 rounded-lg p-2 w-32 transition-colors duration-300 ease-in-out"
-        >Get in touch</NuxtLink
-      >
-    </div>
-    <hr class="my-3" />
-    <div class="my-3">
-      <icon-app />
-    </div>
+      <div class="flex gap-3 my-3">
+        <NuxtLink to="/project"
+          class="bg-teal-500 hover:bg-teal-700 text-zinc-100 hover:text-zinc-50 font-normal text-center rounded-lg p-2 w-32 ease-in-out duration-500 delay-75">
+          Explore</NuxtLink>
+        <NuxtLink to="/contact"
+          class="bg-white text-teal-500 hover:text-teal-700 border border-teal-500 hover:border-teal-700 font-normal text-center border-solid  rounded-lg p-2 w-32 ease-in-out duration-500 delay-75">
+          Get in touch</NuxtLink>
+      </div>
+      <hr class="my-3" />
+      <div class="my-3">
+        <icon-app />
+      </div>
+    </main>
+
+
+    <section class="justify-center items-center">
+      <h3 class="text-2xl font-semibold text-teal-500">Skills</h3>
+      <div class="flex justify-center flex-wrap gap-3">
+        <div v-for="item in skills" :key="item.code">
+          <div
+            class="bg-zinc-50 border border-transparent hover:border-teal-500 hover:text-teal-500 px-6 py-4 rounded ease-in-out duration-500 delay-75">
+            {{
+              item.code }}
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <style scoped>
