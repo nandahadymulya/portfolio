@@ -1,12 +1,9 @@
+<script setup>
+const date = new Date();
+const year = date.getFullYear();
+</script>
 <template>
-  <footer class="w-full p-4 md:p-6 bg-zinc-100 text-zinc-400 text-base">
-    &copy; 2022 - Nanda Hady Mulya.
+  <footer class="w-full p-2 sm:p-3 md:p-4 bg-zinc-100 text-zinc-500 text-base text-center">
+    &copy; {{ year }} - Nanda Hady Mulya. All rigth reserved.
   </footer>
 </template>
-<style>
-@media (max-width: 768px) {
-  .footer {
-    display: none;
-  }
-}
-</style>

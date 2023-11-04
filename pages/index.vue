@@ -12,7 +12,7 @@ const skills = [
 ]
 </script>
 <template>
-  <div class="flex flex-col p-6 md:p-16">
+  <div class="">
     <main class="bg-zinc-50 p-10 rounded-2xl mb-6">
       <div class="mb-12">
         <h2 class="font-extrabold text-3xl sm:text-4xl md:text-5xl text-zinc-700 leading-relaxed">
@@ -55,43 +55,4 @@ const skills = [
   </div>
 </template>
 <style scoped>
-.greeting--container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.cta--container,
-.social--icon--container {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.btn--primary {
-  background-color: var(--color-primary);
-  border-radius: 1.25rem;
-  color: var(--color-light);
-  padding: 0.75rem 1.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn--primary:hover {
-  filter: drop-shadow(0 0 0.75rem var(--color-primary));
-  transition: all 0.3s ease-in-out;
-}
-
-.btn--secondary {
-  background-color: var(--color-light);
-  border: 1px solid var(--color-primary);
-  border-radius: 1.25rem;
-  color: var(--color-primary);
-  padding: 0.75rem 1.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn--secondary:hover {
-  filter: drop-shadow(0 0 0.75rem var(--color-primary));
-  transition: all 0.3s ease-in-out;
-}
 </style>

@@ -5,7 +5,7 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div class="bg-teal-100">
+  <main class="text-center">
     {{ pageName }}
-  </div>
+  </main>
 </template>
