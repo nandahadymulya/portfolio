@@ -21,7 +21,7 @@ const skills = [
         </h2>
         <div class="my-3 text-zinc-700 leading-relaxed">
           A <b>Software Engineer</b> has a sense of design and experienced full-stack development specializing in
-          <b>Python</b>, <b>TypeScript</b>, and <b>Flutter</b>.
+          <b>Python</b>, <b>JavaScript</b>, <b>TypeScript</b>, and <b>Flutter</b>. <br>
           I am interested in <b>Natural Language Processing</b> and <b>Machine Learning (ML)</b>.
         </div>
       </div>
